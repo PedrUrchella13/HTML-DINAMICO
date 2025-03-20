@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Atividade 01</title>
+  </head>
+  <body>
+    <!-- Exercício 1 - Toque a imagem aleatoriamente quando clicar sobre ela -->
+    <h1>Exercício 1 - Trocando as imagens</h1>
+    <img id="imagem" src="img/box.png" onclick="trocarImagem();" />
+    <br />
+    <hr />
+
+    <!-- Exercício 2 - Faça a calculadora funcionar -->
+    <h1>Exercício 2 - Calculadora</h1>
+    <form id="frmCalculadora" name="frmCalculadora">
+      <div>
+        <input
+          id="inValor1"
+          name="inValor1"
+          type="number"
+          value="0"
+          placeholder="valor 1"
+        />
+        <input
+          id="inValor2"
+          name="inValor2"
+          type="number"
+          value="0"
+          placeholder="valor 2"
+        />
+        <span>=</span>
+        <input
+          id="inResultado"
+          name="inResultado"
+          type="number"
+          value="0"
+          placeholder="Resultado"
+          readonly="true"
+        />
+      </div>
+      <div id="botoes">
+        <button id="btnSoma" type="button">Somar</button>
+        <button id="btnSubracao" type="button">Subtrair</button>
+        <button id="btnMultiplicacao" type="button">Multiplicar</button>
+        <button id="btnDivisao" type="button">Dividir</button>
+      </div>
+    </form>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

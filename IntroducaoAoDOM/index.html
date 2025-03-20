@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+</head>
+<body style="background-color: rgb(152, 13, 183); text-align: center;">
+    <h1>Introdução ao DOM veyr</h1>
+    <p id="meuTexto">Texto Original</p>
+    <button onclick="mudarTexto()">Troque Aqui Manos e Manaxs!</button>
+
+    <button onclick="adicionarTexto()">Adidicionar Texto veyr!</button>
+
+    <button onclick="apagarTexto()">Apagar Texto veyr!</button>
+
+    <script>
+        const mudarTexto = () => {
+            document.getElementById("meuTexto").innerHTML = "Texto Alterado!"
+        };
+        const adicionarTexto = () => {
+            document.getElementById("meuTexto").innerHTML += "Texto Adicionado!"
+        };
+        const apagarTexto = () => {
+            document.getElementById("meuTexto").innerHTML = ""
+        };
+    </script>
+</body>
+</html>
