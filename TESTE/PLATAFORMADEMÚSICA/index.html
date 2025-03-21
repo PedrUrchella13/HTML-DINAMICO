@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sportify</h1>
+        </header>
+
+        <div class="player">
+            <div class="song-info">
+                <h2 id="song-title">Título da Música</h2>
+                <p id="song-artist">Artista</p>
+            </div>
+            <audio id="audio" controls>
+                <source id="audio-source" src="" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+
+            <div class="controls">
+                <button id="prev" onclick="prevSong()">Anterior</button>
+                <button id="play-pause" onclick="togglePlayPause()">Play</button>
+                <button id="next" onclick="nextSong()">Próxima</button>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="playlist">
+                <!-- Lista de músicas será gerada aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
